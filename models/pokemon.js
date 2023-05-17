@@ -1,5 +1,5 @@
-
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
+const mongoosePaginate = require('mongoose-paginate');
 
 const PokemonSchema = mongoose.Schema({
     _id: String,
@@ -25,6 +25,8 @@ const PokemonSchema = mongoose.Schema({
     },
     evoluciones: String,
 
-});
+}, { collection: 'Pokemones' });
+
+PokemonSchema.plugin(mongoosePaginate);
 
 module.exports = mongoose.model("Pokemon", PokemonSchema);

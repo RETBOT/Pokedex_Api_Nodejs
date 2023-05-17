@@ -44,13 +44,22 @@ function register(req, res) {
 
 // Ver todos los pokemones
 async function getPokemons(req, res) {
-    res.status(200).send(await User.find());
+    const { page = 1, limit = 10 } = req.query;
+    const options = {
+        page: parseInt(page),
+        limit: parseInt(limit)
+    };
+
+    Pokemon.paginate({}, options, (error, courses) => {
+        if (error) res.status(400).send({ msg: "Error al obtener los cursos" });
+        else res.status(200).send(courses);
+    });
 }
 
 // Un pokemon
 async function getPokemon(req, res) {
-    const { pokemon_id } = req.user;
-    const response = await User.findById(pokemon_id);
+    const { id } = req.params;
+    const response = await Pokemon.findById(id);
 
     if (!response) {
         res.status(400).send({ msg: "No se ha encontrado pokemon" });
@@ -64,7 +73,7 @@ async function updatePokemon(req, res) {
     const { id } = req.params;
     const pokemonData = req.body;
 
-    User.findByIdAndUpdate({ _id: id }, pokemonData, (error) => {
+    Pokemon.findByIdAndUpdate({ _id: id }, pokemonData, (error) => {
         if (error) res.status(400).send({ msg: "Error al actualizar el pokemon" });
         else res.status(200).send({ msg: "Actualización correcta" });
 
@@ -74,7 +83,7 @@ async function updatePokemon(req, res) {
 // Eliminar Pokemon
 async function deletPokemon(req, res) {
     const { id } = req.params;
-    User.findByIdAndDelete(id, (error) => {
+    Pokemon.findByIdAndDelete(id, (error) => {
         if (error) {
             res.status(400).send({ msg: "Error al eliminar el pokemon" });
         } else {

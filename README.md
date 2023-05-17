@@ -3,9 +3,9 @@
 ## Peticiones 
 ### Registro de pokemon
 POST
-Url: http://localhost:3000/api/v1/pokedex/register
-Header: Authorization + Key
-Body: raw + json 
+Url: http://localhost:3000/api/v1/pokedex/register <br>
+Header: Authorization + Key <br>
+Body: raw + json  <br>
 ```
 {
     "_id": "",
@@ -34,18 +34,18 @@ Body: raw + json
 ```
 
 ### obtener todos los pokemones
-GET
-Url: http://localhost:3000/api/v1/
+GET <br>
+Url: http://localhost:3000/api/v1/pokedex <br>
 
 ### obtener un pokemon
-GET
-Url: http://localhost:3000/api/v1/pokedex/:id
+GET<br>
+Url: http://localhost:3000/api/v1/pokedex/:id<br>
 
 ### Modificar
-PATCH
-Url: http://localhost:3000/api/v1/pokedex/:id
-Header: Authorization + Key
-Body: raw + json 
+PATCH<br>
+Url: http://localhost:3000/api/v1/pokedex/:id<br>
+Header: Authorization + Key<br>
+Body: raw + json <br>
 ```
 {
     "_id": "",
@@ -75,6 +75,6 @@ Body: raw + json
 
 
 ### Eliminar
-DELETE
-Url: http://localhost:3000/api/v1/pokedex/:id
-Header: Authorization + Key
+DELETE <br>
+Url: http://localhost:3000/api/v1/pokedex/:id <br>
+Header: Authorization + Key <br>
