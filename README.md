@@ -16,6 +16,7 @@ Obtén información sobre los pokémons de la página 1 de la pokédex.
 ``` API
  https://pokedex-api-server.onrender.com/api/v1/pokedex?page=1
 ```
+<<<<<<< HEAD
 
 Imagen: 
 ![Api-Pokemon](https://github.com/RETBOT/Pokedex_Api_Nodejs/blob/main/Imgs/Pokemon%20Api.png)
@@ -48,6 +49,9 @@ Obtén información sobre los pokémons que tienen debilidad a uno o varios tipo
 
 ``` API
  https://pokedex-api-server.onrender.com/api/v1/pokedex/weakness/tierra&roca
+=======
+ https://pokedex-api-server.onrender.com/api/v1/pokedex/4
+>>>>>>> bff8a23e5be40057d49fd2922daaa82df9d0388e
  ```
 Imagen: 
 ![Api-tipo-Pokemon](https://github.com/RETBOT/Pokedex_Api_Nodejs/blob/main/Imgs/Pokemon%20Api%20weakness.png)
@@ -69,6 +73,7 @@ deletPokemon: Elimina un Pokémon de la base de datos.
 ``` 
 api.post("/pokedex/register", [md_auth.asureAuth], PokemonController.register);
 ```
+<<<<<<< HEAD
 Esta petición permite registrar un nuevo Pokémon en la Pokédex. Se espera que los datos del Pokémon se envíen en el cuerpo de la solicitud (req.body). Los campos requeridos son _id (identificador único), numero, url, name, image, descripcionversionx, descripcionversiony, altura, categoria, peso, habilidad, sexo, tipo, debilidad, puntosbase y evoluciones.
 
 ### Obtener todos los pokemones
@@ -96,6 +101,33 @@ Esta petición permite obtener Pokémon que pertenezcan a uno o varios tipos esp
 
 ```
 api.get("/pokedex/weakness/:weakness", PokemonController.getPokemonByWeakness);
+=======
+{
+    "_id": 0,
+    "numero": "", 
+    "url": "",
+    "name": "",
+    "image": "",
+    "descripcionversionx": "",
+    "descripcionversiony": "",
+    "altura": "",
+    "categoria": "",
+    "peso": "",
+    "habilidad": "",
+    "sexo": "",
+    "tipo": "",
+    "debilidad": "",
+    "puntosbase": {
+        "ps": 1,
+        "ataque": 2,
+        "defensa": 3,
+        "ataqueespecial": 4,
+        "defensaespecial": 5,
+        "velocidad": 6
+    },
+    "evoluciones": ""
+}
+>>>>>>> bff8a23e5be40057d49fd2922daaa82df9d0388e
 ```
 
 Esta petición permite obtener Pokémon que tengan una o varias debilidades específicas. Las debilidades se especifican en la ruta separadas por "&" (req.params).
@@ -103,7 +135,35 @@ Esta petición permite obtener Pokémon que tengan una o varias debilidades espe
 ### Actualizar un Pokémon
 
 ```
+<<<<<<< HEAD
 api.patch("/pokedex/update/:id", [md_auth.asureAuth], PokemonController.updatePokemon);
+=======
+{
+    "_id": 0,
+    "numero": "",
+    "url": "",
+    "name": "",
+    "image": "",
+    "descripcionversionx": "",
+    "descripcionversiony": "",
+    "altura": "",
+    "categoria": "",
+    "peso": "",
+    "habilidad": "",
+    "sexo": "",
+    "tipo": "",
+    "debilidad": "",
+    "puntosbase": {
+        "ps": 1,
+        "ataque": 2,
+        "defensa": 3,
+        "ataqueespecial": 4,
+        "defensaespecial": 5,
+        "velocidad": 6
+    },
+    "evoluciones": ""
+}
+>>>>>>> bff8a23e5be40057d49fd2922daaa82df9d0388e
 ```
 Esta petición permite actualizar los datos de un Pokémon existente. El ID del Pokémon se especifica en la ruta (req.params), y los nuevos datos se envían en el cuerpo de la solicitud (req.body).
 

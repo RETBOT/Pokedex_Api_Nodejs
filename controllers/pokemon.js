@@ -74,6 +74,7 @@ async function getPokemon(req, res) {
     }
 }
 
+<<<<<<< HEAD
 // Pokemon por tipo
 async function getPokemonByType(req, res) {
     try {
@@ -137,6 +138,8 @@ async function getPokemonByCategory(req, res) {
     }
 }
 
+=======
+>>>>>>> bff8a23e5be40057d49fd2922daaa82df9d0388e
 
 // Actualizar Pokemon
 async function updatePokemon(req, res) {
