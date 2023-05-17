@@ -2,7 +2,8 @@ const mongoose = require('mongoose');
 const mongoosePaginate = require('mongoose-paginate');
 
 const PokemonSchema = mongoose.Schema({
-    _id: String,
+    _id: Number,
+    numero: String,
     url: String,
     name: String,
     image: String,

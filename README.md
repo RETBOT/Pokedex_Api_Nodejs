@@ -13,7 +13,7 @@ Ejemplo: https://pokedex-api-server.onrender.com/api/v1/pokedex?page=2
  ```
 ![Api-Pokemon](https://github.com/RETBOT/Pokedex_Api_Nodejs/blob/main/Imgs/Pokemon%20Api.png)
 ```
- https://pokedex-api-server.onrender.com/api/v1/pokedex/N.º0004
+ https://pokedex-api-server.onrender.com/api/v1/pokedex/4
  ```
 ![Api-1-Pokemon](https://github.com/RETBOT/Pokedex_Api_Nodejs/blob/main/Imgs/Pokemon%20Api%20pokemon.png)
 
@@ -26,7 +26,8 @@ Header: Authorization + Key <br>
 Body: raw + json  <br>
 ```
 {
-    "_id": "",
+    "_id": 0,
+    "numero": "", 
     "url": "",
     "name": "",
     "image": "",
@@ -66,7 +67,8 @@ Header: Authorization + Key<br>
 Body: raw + json <br>
 ```
 {
-    "_id": "",
+    "_id": 0,
+    "numero": "",
     "url": "",
     "name": "",
     "image": "",

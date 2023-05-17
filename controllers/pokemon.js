@@ -3,7 +3,7 @@ const Pokemon = require("../models/pokemon");
 // Registro de pokemon 
 function register(req, res) {
     const {
-        _id, url, name, image, descripcionversionx, descripcionversiony,
+        _id, numero, url, name, image, descripcionversionx, descripcionversiony,
         altura, categoria, peso, habilidad, sexo, tipo, debilidad, puntosbase, evoluciones } = req.body;
 
     if (!_id) res.status(400).send({ msg: "El id es obligatorio" });
@@ -11,6 +11,7 @@ function register(req, res) {
     const pokemon = new Pokemon({
         _id,
         url,
+        numero,
         name,
         image,
         descripcionversionx,
@@ -58,15 +59,21 @@ async function getPokemons(req, res) {
 
 // Un pokemon
 async function getPokemon(req, res) {
-    const { id } = req.params;
-    const response = await Pokemon.findById(id);
+    try {
+        const { id } = req.params;
+        const pokemon = await Pokemon.findById(id);
 
-    if (!response) {
-        res.status(400).send({ msg: "No se ha encontrado pokemon" });
-    } else {
-        res.status(200).send(response);
+        if (!pokemon) {
+            return res.status(404).send({ msg: `No se ha encontrado el pokémon con id: ${id}` });
+        }
+
+        res.status(200).send(pokemon);
+    } catch (error) {
+        console.error(error);
+        res.status(500).send({ msg: "Error interno del servidor" });
     }
 }
+
 
 // Actualizar Pokemon
 async function updatePokemon(req, res) {
