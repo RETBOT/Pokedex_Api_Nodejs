@@ -3,6 +3,11 @@
 ## Peticiones 
 URl de servidor en linea: https://pokedex-api-server.onrender.com/api/v1/pokedex <br>
 Modificar http://localhost:3000/api/v1/ por https://pokedex-api-server.onrender.com/api/v1/ para las peticiones
+
+## Imagenes
+![Api-Pokemon](https://github.com/RETBOT/Pokedex_Api_Nodejs/blob/main/Imgs/Pokemon%20Api.png)
+![Api-1-Pokemon](https://github.com/RETBOT/Pokedex_Api_Nodejs/blob/main/Imgs/Pokemon%20Api%20pokemon.png)
+
 ### Registro de pokemon
 POST
 Url: http://localhost:3000/api/v1/pokedex/register <br>
