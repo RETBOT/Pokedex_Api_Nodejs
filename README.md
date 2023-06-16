@@ -29,6 +29,10 @@ Obtén información sobre un pokémon específico utilizando su ID.
 ``` url
  https://pokedex-api-server.onrender.com/api/v1/pokedex/id/4
 ```
+o
+```url
+ http://ec2-3-93-236-136.compute-1.amazonaws.com:3000/api/v1/pokedex/id/4
+```
 Imagen: 
 ![Api-id-Pokemon](https://github.com/RETBOT/Pokedex_Api_Nodejs/blob/main/Imgs/Pokemon%20Api%20pokemon.png)
 
@@ -36,6 +40,10 @@ Imagen:
 Se puede ir concatenando con "&" y muestra todos los tipos de pokemon encontrados 
 ``` url
  https://pokedex-api-server.onrender.com/api/v1/pokedex/type/fuego&volador
+```
+o
+```url
+ http://ec2-3-93-236-136.compute-1.amazonaws.com:3000/api/v1/pokedex/type/fuego&volador
 ```
 Imagen: 
 ![Api-tipo-Pokemon](https://github.com/RETBOT/Pokedex_Api_Nodejs/blob/main/Imgs/Pokemon%20Api%20tipo.png)
@@ -45,6 +53,10 @@ Obtén información sobre los pokémons que tienen debilidad a uno o varios tipo
 ``` url
  https://pokedex-api-server.onrender.com/api/v1/pokedex/weakness/tierra&roca
  ```
+ o
+```url
+ http://ec2-3-93-236-136.compute-1.amazonaws.com:3000/api/v1/pokedex/weakness/tierra&roca
+```
 Imagen: 
 ![Api-tipo-Pokemon](https://github.com/RETBOT/Pokedex_Api_Nodejs/blob/main/Imgs/Pokemon%20Api%20weakness.png)
 
