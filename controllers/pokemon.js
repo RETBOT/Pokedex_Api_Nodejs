@@ -52,7 +52,7 @@ async function getPokemons(req, res) {
     };
 
     Pokemon.paginate({}, options, (error, courses) => {
-        if (error) res.status(400).send({ msg: "Error al obtener los cursos" });
+        if (error) res.status(400).send({ msg: "Error al obtener los pokemon" });
         else res.status(200).send(courses);
     });
 }
