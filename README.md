@@ -3,6 +3,7 @@
 ## Peticiones 
 URl de servidor en linea: https://pokedex-api-server.onrender.com/api/v1/pokedex <br>
 URL de servidor en linea aws: http://3.93.236.136:3000/api/v1/pokedex <br>
+URL de servidor en linea aws: http://ec2-3-93-236-136.compute-1.amazonaws.com:3000/api/v1/pokedex <br>
 
 Modificar http://localhost:3000/api/v1/ por https://pokedex-api-server.onrender.com/api/v1/ para las peticiones
 
