@@ -17,6 +17,10 @@ Obtén información sobre los pokémons de la página 1 de la pokédex.
 ``` url
  https://pokedex-api-server.onrender.com/api/v1/pokedex?page=1
 ```
+o
+```url
+ http://ec2-3-93-236-136.compute-1.amazonaws.com:3000/api/v1/pokedex?page=1
+```
 Imagen: 
 ![Api-Pokemon](https://github.com/RETBOT/Pokedex_Api_Nodejs/blob/main/Imgs/Pokemon%20Api.png)
 
