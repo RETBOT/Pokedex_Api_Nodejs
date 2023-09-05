@@ -3,7 +3,6 @@
 ## Peticiones 
 URl de servidor en linea: https://pokedex-api-server.onrender.com/api/v1/pokedex <br>
 URL de servidor en linea aws: http://44.215.225.60:3000/api/v1/pokedex <br>
-URL de servidor en linea aws: http://ec2-44-215-225-60.compute-1.amazonaws.com:3000/api/v1/pokedex <br>
 
 Modificar http://localhost:3000/api/v1/ por https://pokedex-api-server.onrender.com/api/v1/ para las peticiones
 
@@ -17,10 +16,7 @@ Obtén información sobre los pokémons de la página 1 de la pokédex.
 ``` url
  https://pokedex-api-server.onrender.com/api/v1/pokedex?page=1
 ```
-o
-```url
- http://ec2-44-215-225-60.compute-1.amazonaws.com:3000/api/v1/pokedex?page=1
-```
+
 Imagen: 
 ![Api-Pokemon](https://github.com/RETBOT/Pokedex_Api_Nodejs/blob/main/Imgs/Pokemon%20Api.png)
 
@@ -29,10 +25,7 @@ Obtén información sobre un pokémon específico utilizando su ID.
 ``` url
  https://pokedex-api-server.onrender.com/api/v1/pokedex/id/4
 ```
-o
-```url
- http://ec2-44-215-225-60.compute-1.amazonaws.com:3000/api/v1/pokedex/id/4
-```
+
 Imagen: 
 ![Api-id-Pokemon](https://github.com/RETBOT/Pokedex_Api_Nodejs/blob/main/Imgs/Pokemon%20Api%20pokemon.png)
 
@@ -41,10 +34,7 @@ Se puede ir concatenando con "&" y muestra todos los tipos de pokemon encontrado
 ``` url
  https://pokedex-api-server.onrender.com/api/v1/pokedex/type/fuego&volador
 ```
-o
-```url
- http://ec2-44-215-225-60.compute-1.amazonaws.com:3000/api/v1/pokedex/type/fuego&volador
-```
+
 Imagen: 
 ![Api-tipo-Pokemon](https://github.com/RETBOT/Pokedex_Api_Nodejs/blob/main/Imgs/Pokemon%20Api%20tipo.png)
 
@@ -53,10 +43,7 @@ Obtén información sobre los pokémons que tienen debilidad a uno o varios tipo
 ``` url
  https://pokedex-api-server.onrender.com/api/v1/pokedex/weakness/tierra&roca
  ```
- o
-```url
- http://ec2-44-215-225-60.compute-1.amazonaws.com:3000/api/v1/pokedex/weakness/tierra&roca
-```
+
 Imagen: 
 ![Api-tipo-Pokemon](https://github.com/RETBOT/Pokedex_Api_Nodejs/blob/main/Imgs/Pokemon%20Api%20weakness.png)
 
